@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function() {\n    document.write('Hello zhangxiao! iam using scripts iam using a config file!');\n});\n\n//# sourceURL=webpack:///./src/add-content.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function() {\n    document.write('Hello zhangxiao! iam using scripts iam using a config file! iam using devserver');\n});\n\n//# sourceURL=webpack:///./src/add-content.js?");
 
 /***/ }),
 
