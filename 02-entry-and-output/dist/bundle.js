@@ -86,27 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/add-content.js":
-/*!****************************!*\
-  !*** ./src/add-content.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function() {\n    document.write('Hello zhangxiao! iam using scripts iam using a config file! iam using devserver');\n});\n\n//# sourceURL=webpack:///./src/add-content.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _add_content_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add-content.js */ \"./src/add-content.js\");\n\ndocument.write('My first Webpack app.<br />');\nObject(_add_content_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("document.write('webpack entry 配置')\ndocument.write('webpack entry 配置为数组的形式')\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
