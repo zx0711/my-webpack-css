@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
     // 设置为字符串的形式
-    entry: './src/index.js',
+    entry: './src/app.js',
     // 设置为数组的形式，下面的babel-polyfill相当于在入口文件引入babel-polyfill
     // entry: ['babel-polyfill','./src/index.js'],
     // 设置为对象
@@ -25,12 +25,18 @@ module.exports = {
     output:{
         // filename:'bundle.js',
         // filename: './js/bundle.js',
-        filename: '[name]@[chunkhash:8].js',
-        path: path.join(__dirname, 'dist'),
+        filename: 'bundle.js',
+        path: path.join(__dirname, 'build'),
         publicPath:'http://cdn.com',//资源放在远程的地址
     },
+    module:{
+        rules:[{ // rules代表模块的处理规则，其实是有很多规则的，下面的每一个需要配置的一个属性就是一个规则
+            test:/\.css$/,
+            use:['style-loader','css-loader'],
+        }]
+    },
     mode: 'development',
-    devServer:{
-        publicPath: '/dist/',// 这个publicPath是指本地要实时更新的代码放置的文件路径
+    devServer:{ //devServer的使用是在已经有编译后的包,而且devserver做的修改并没有在已有的build包中
+        publicPath: '/build/',// 这个publicPath是指本地要实时更新的代码放置的文件路径
     }
 }

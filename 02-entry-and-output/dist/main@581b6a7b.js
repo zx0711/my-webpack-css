@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/lib.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/lib.js":
-/*!********************!*\
-  !*** ./src/lib.js ***!
-  \********************/
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.write('webapck lib')\n\n//# sourceURL=webpack:///./src/lib.js?");
+eval("document.write('webpack entry 配置')\ndocument.write('webpack entry 配置为数组的形式')\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
