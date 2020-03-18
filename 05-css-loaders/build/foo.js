@@ -69,13 +69,10 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_foo_style_css__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_foo_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_foo_style_css__);
 
-
-// export default <div className = 'test'>nihao</div>
-document.write('My Webpack app')
-
+document.write('foo')
 
 /***/ }),
 /* 1 */

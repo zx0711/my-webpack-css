@@ -7,7 +7,7 @@ module.exports = {
         bar: './src/scripts/bar.js',
     },
     output:{
-        filename: 'bundle.js',
+        filename: '[name].js',
         path: path.join(__dirname, 'build'),
         publicPath:'http://cdn.com',
     },
@@ -24,7 +24,7 @@ module.exports = {
      ]
     },
     plugins:[
-        new ExtractTextPlugin('bundle.css')
+        new ExtractTextPlugin('[name].css')
     ],
     
     devServer:{ //devServer的使用是在已经有编译后的包,而且devserver做的修改并没有在已有的build包中
