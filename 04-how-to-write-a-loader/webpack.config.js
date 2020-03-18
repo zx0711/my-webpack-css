@@ -72,6 +72,15 @@ module.exports = {
                 }
             }
         },
+        {
+            test:/\.js$/,
+            use:{
+                loader:[path.join(__dirname, './force-strict-loader/index.js')],
+                options:{
+                    sourceMap:true
+                }
+                }
+        }
        
     ]
     },

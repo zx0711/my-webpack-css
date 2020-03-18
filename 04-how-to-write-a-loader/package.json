@@ -19,6 +19,7 @@
   "dependencies": {
     "css-loader": "^3.4.2",
     "file-loader": "^6.0.0",
+    "force-strict-loader": "file:force-strict-loader",
     "react": "^16.13.0",
     "style-loader": "^1.1.3",
     "url-loader": "^4.0.0"
