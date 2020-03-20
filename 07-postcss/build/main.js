@@ -69,8 +69,8 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_css__);
 
 
 document.write('My Webpack app')
@@ -383,9 +383,9 @@ module.exports = function (list, options) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
-exports = ___CSS_LOADER_API_IMPORT___(true);
+exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".container .title{color:#09c}\n", "",{"version":3,"sources":["/Users/xmly/Desktop/ximalaya/myTestItem/06-sass/src/style.scss"],"names":[],"mappings":"AACA,kBAEQ,UAHW","file":"style.scss","sourcesContent":["$primary-color:#09c;\n.container{\n    .title{\n        color: $primary-color;\n    }\n}\n"]}]);
+exports.push([module.i, ".container{\n    display: -ms-grid;\n    display: grid;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
