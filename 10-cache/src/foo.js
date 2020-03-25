@@ -1,0 +1,1 @@
+document.write('如何输出动态的HTML')
