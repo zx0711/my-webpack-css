@@ -1,0 +1,59 @@
+/*
+ * 通过一个很简单的图 我好像明白了 宽度=margin+border+padding   
+ * 展示出来的效果是 border是把padding包裹在一起的，margin在border的外面
+ */
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>使用css3层次选择器</title>
+    <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      width: 300px;
+      margin: 0 auto;
+    }
+    div{
+       margin: 5px;
+       padding: 5px;
+       border: 1px solid blue; 
+    }
+    div div{
+      background: orange;
+    }
+    body > div{ 
+      background: green;
+    }
+    /* 相邻兄弟选择器 */
+    .active + div{ 
+      background: lime;
+    }
+    /* 通用兄弟选择器 */
+    .active ~ div{ 
+      background: red;
+    }
+    </style>
+    <body>
+      <div class="active">1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4
+        <div>5</div>
+        <div>6</div>
+      </div>
+      <div>7
+        <div>8
+          <div>9
+            <div>10</div>
+          </div>
+        </div>
+        <p>body > div子选择器是父子 而不包含父孙关系</p>
+        <p>body div后代选择器是祖先和下面的所有</p>
+      </div>
+      
+    </body>
+  </head>
+</html>

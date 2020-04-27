@@ -1,0 +1,43 @@
+/*
+ * css3伪类选择器，包括6重
+ 动态伪类选择器
+ 目标伪类选择器
+ 语言伪类选择器
+ ui状态伪类选择器
+ 结构伪类选择器
+ */
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>使用css3层次选择器</title>
+    <style type="text/css">
+    .down-info{
+      text-align: center;
+    }
+    .btn{
+      background-color: white;
+
+    }
+    /* 悬浮上去时 */
+    .btn:hover{
+      background-color: yellow;
+    }
+
+    /* 点击的过程中，适合按钮点击的效果，点击结束效果也就不存在了 */
+    .btn:active{
+      background-color: blue;
+    }
+    /* 触焦的过程 */
+    .btn:focus{
+      background-color: red;
+    }
+    </style>
+    <body>
+      <div class="down-info">1</div>
+        <a href = '#' class="btn">View project on GitHub</a>
+      </div>
+      
+    </body>
+  </head>
+</html>

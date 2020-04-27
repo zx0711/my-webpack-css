@@ -1,0 +1,58 @@
+/*
+ * css3伪类选择器，包括6重
+ 动态伪类选择器
+ 目标伪类选择器
+ 语言伪类选择器
+ ui状态伪类选择器
+ 结构伪类选择器
+ */
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>测试目标伪类选择器</title>
+    <style type="text/css">
+    .accordionMenu{
+      background: #ffffff;
+      color: #424242;
+      font: 12px;
+      margin: 0 auto;
+      padding: 10px;
+      width: 500px;
+    }
+    .accordionMenu h2{
+      margin: 5px 0;
+      padding: 0;
+      position: relative;
+    }
+    .accordionMenu h2::before{
+      border: 5px solid #fff;
+      background-color: #fff transparent transparent;
+      content: "";
+      height: 0;
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      width: 0;
+    }
+    
+    </style>
+    <body>
+      <div class="accordionMenu">
+        <div class="menuSection" id = "brand"></div>
+          <h2><a href="#brand">brand</a></h2>
+          <p>Lorwmwmmwmwmmw1...</p>
+        </div>
+        <div class="menuSection" id = "promotion"></div>
+          <h2><a href="#brand">promotion</a></h2>
+          <p>Lorwmwmmwmwmmw2...</p>
+        </div>
+        <div class="menuSection" id = "event"></div>
+          <h2><a href="#event">Event</a></h2>
+          <p>Lorwmwmmwmwmmw3...</p>
+        </div>
+      </div>
+      
+    </body>
+  </head>
+</html>
