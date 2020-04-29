@@ -2,7 +2,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-29 14:48:00
- * @LastEditTime: 2020-04-29 14:59:02
+ * @LastEditTime: 2020-04-29 15:05:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /myTestItem/css学习/src/伪元素.js
@@ -16,7 +16,7 @@
  * @FilePath: /myTestItem/css学习/src/App.js
  */
 import React, { Component } from "react"
-import './style'
+import './style.css'
 
 class Pseudo extends Component {
   render(){
