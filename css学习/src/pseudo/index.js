@@ -2,19 +2,12 @@
 /*
  * @Author: your name
  * @Date: 2020-04-29 14:48:00
- * @LastEditTime: 2020-04-29 15:05:16
+ * @LastEditTime: 2020-04-30 10:51:39
  * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
+ * @Description: 伪元素
  * @FilePath: /myTestItem/css学习/src/伪元素.js
  */
-/*
- * @Author: your name
- * @Date: 2020-04-28 16:25:23
- * @LastEditTime: 2020-04-29 11:51:17
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /myTestItem/css学习/src/App.js
- */
+
 import React, { Component } from "react"
 import './style.css'
 

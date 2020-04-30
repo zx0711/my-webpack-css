@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-28 14:56:52
- * @LastEditTime: 2020-04-29 15:23:13
+ * @LastEditTime: 2020-04-30 15:46:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /myTestItem/css学习/webpack.config.js
@@ -32,8 +32,28 @@ module.exports = {
           use:ExtractTextPlugin.extract({
             fallback:'style-loader',
             use:'css-loader',
-          })
-        }
+          }),
+        },
+        {
+          test: [/\.bmp$/, /\.gif$/, /\.jpeg$/, /\.png$/],
+          loader: require.resolve('url-loader'),
+          options: {
+            limit: 10000,
+            name: 'dist/media/[name].[ext]',
+            publicPath:'./assets-path/'
+          }
+        },
+        // {
+        //   loader: require.resolve('file-loader'),
+        //   // Exclude `js` files to keep "css" loader working as it injects
+        //   // it's runtime that would otherwise processed through "file" loader.
+        //   // Also exclude `html` and `json` extensions so they get processed
+        //   // by webpacks internal loaders.
+        //   exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/],
+        //   options: {
+        //     name: 'dist/media/[name].[ext]'
+        //   }
+        // }
       ]
     },
     plugins: [

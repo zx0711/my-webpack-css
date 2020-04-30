@@ -1,3 +1,16 @@
-p{
-  color: red;
+/* first-letter第一个字母 */
+p:first-child::first-letter {
+  float: left;
+  color: #903;
+  padding: 4px 8px 0 3px;
+  font:75px/60px  Georgia;
+}
+/* first-line第一行 */
+p:last-child::first-line {
+  font: italic 16px/18px Georgia;
+  color: #903;
+}.border-wrap{
+  border: 3px red;
+  /* border-style: solid dotted dashed inset; */
+  border-image: url(./assets-path/dist/media/test1.png);
 }

@@ -1,0 +1,5 @@
+.border-wrap{
+  border: 3px red solid;
+  /* border-style: solid dotted dashed inset; */
+  /* border-image: url('./test1.png'); */
+}

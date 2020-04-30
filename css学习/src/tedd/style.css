@@ -1,0 +1,42 @@
+.demo{
+  width: 300px;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.demo a{
+  float: left;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  text-align: center;
+  background: #aac;
+  color: blue;
+  font: bold 20px/50px Arial;
+  /* margin-right: 5px; */
+  text-decoration: none;
+  margin: 5px;
+}
+/* 优先级最三 */
+a[id]{
+  background-color: yellow;
+}
+/* 优先级最高 */
+a[id][title]{
+  background-color: red;
+}
+/* 优先级第二 */
+a[id=first]{
+  background-color: green;
+}
+/* title里只要包含website都是可以 */
+a[title~=website]{
+  background-color: hotpink;
+}
+
+img{
+  width: 100px;
+  border: 1px solid red;
+}
