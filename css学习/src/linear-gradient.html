@@ -1,0 +1,53 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-05-22 18:18:42
+ * @LastEditTime: 2020-05-25 18:40:24
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /myTestItem/css学习/src/盒模型.html
+--> 
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>css3 线性渐变-从顶部到底部渐变</title>
+  <style type="text/css">
+   div{
+     width: 400px;
+     height: 150px;
+     border: 1px solid #666666;
+     line-height: 150px;
+     text-align: center;
+     font-weight: 900;
+     font-size: 30px;
+     color: #ffffff;
+     margin: 10px auto;
+   }
+   div:nth-child(1){
+     background-image: linear-gradient(to top,orange,green);
+   }
+   div:nth-child(2){
+     background-image: linear-gradient(0deg,orange,green);
+   }
+   div:nth-child(3){
+     background-image: linear-gradient(360deg,orange,green);
+   }
+   div:nth-child(4){
+     background-image: linear-gradient(-360deg,orange,green);
+   }
+   
+  </style>
+</head>
+<body>
+    <div>使用关键词：top</div>
+    <div>使用角度: 0deg</div>
+    <div>使用角度: 360deg</div>
+    <div>使用角度: -360deg</div>
+</body>
+</html>
+
+ 
+
+
+
+
