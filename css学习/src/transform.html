@@ -1,0 +1,48 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-06-12 14:58:48
+ * @LastEditTime: 2020-06-12 15:17:27
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /Webpack+Css/css学习/src/transform.html
+-->
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>transform</title>
+  <style type="text/css">
+   *{
+     margin: 0;
+     padding: 0;
+   }
+   #soci1 img, #soci2 img{
+     transition: all 0.8s ease-in-out;
+     width: 100px;
+   }
+
+   #soci1 img:hover{
+     /* transform: rotate(360deg) scale(1.5); */
+     transform: translateZ(-200px);
+     z-index: 2;
+   }
+   #soci2 img:hover{
+     transform: scale3d(0.7,1.2,1.2);
+   }
+
+  </style>
+</head>
+<body>
+  <!-- 具体的部分可以去查阅微信阅读资料,ta只对文本内容有效果，对标签好像没有效果噢 -->
+  <h1>顺时针旋转360度放大1.2倍</h1>
+  <ul id="soci1">
+    <li><a href=""><img src="me.jpeg"></img></a></li>
+  </ul>
+
+  <h1>逆时针旋转360度缩小0.7倍</h1>
+  <ul id="soci2">
+    <li><a href=""><img src="me.jpeg"></img></a></li>
+  </ul>
+
+</body>
+</html>

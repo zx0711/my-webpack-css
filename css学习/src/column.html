@@ -1,0 +1,50 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-05-22 18:18:42
+ * @LastEditTime: 2020-06-12 14:20:57
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /myTestItem/css学习/src/盒模型.html
+--> 
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>多列布局属性</title>
+  <style type="text/css">
+   *{
+     margin: 0;
+     padding: 0;
+   }
+   .flexbox-container{
+     columns: 100px 3;
+    
+   }
+   .flexbox-container div{
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        border: 1px solid red;
+     }
+  </style>
+</head>
+<body>
+  <!-- 具体的部分可以去查阅微信阅读资料,ta只对文本内容有效果，对标签好像没有效果噢 -->
+  <div class="flexbox-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    columns：集成column-width和column-count两个属性，用于实现元素多列布局效果。column-width：定义每列列宽度。column-count：定义分列列数。column-gap：定义列间距。column-rule：定义列边框。column-span：定义多布布局中子元素跨列效果。column-fill：控制每列的列高效果。CSS3中多列属性中还有三种属性可供开发人员用于定义分列符应该出现在何处。break-before、break-after和break-inside属性接受有限数量的关键字作为值，定义分列符应该在元素之前、之后还是内部存在。它们的功能和用法与CSS2.1规范中的page-breakbefore、page-break-after和page-break-inside三个属性相同。在CSS2.1中page-break-before、page-break-after和page-break-inside属性具有的auto、always、avoid、left和right等属性值同样可以用于break-before、break-after和break-inside属性中，而且在CSS3中还为这三个属性增加了page、column、avoid-page和avoid-column四个属性值。
+  </div>
+</body>
+</html>
+
+ 
+
+
+
+
+
